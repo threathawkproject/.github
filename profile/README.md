@@ -21,7 +21,7 @@ ThreatHawk is an investigative threat intelligence platform that empowers cybert
 ## Significance
 - Cyber threats have become increasingly globalized, which is why it is essential to move towards open-source threat intelligence.
 - Traditionally, analyzing a single IOC with multiple tools is an incredibly painful process, since analysts must **manually** configure each tool separately. This is very difficult because different tools work differently (some use REST APIs, whereas others use client libraries or SDKs). ThreatHawk automates the usage of these different tools through one click.
-- Investigating an IOC iteratively (beyond the first level) is a relatively novel approach since most competing solutions only provide data for the first layer. With ThreatHawk, analysts can drill-down to deeper layers until they find satisfactory insights. 
+- Investigating an IOC iteratively (beyond the first level) is a relatively novel approach since most competing solutions only provide data up till the first layer. With ThreatHawk, analysts can drill-down to deeper layers until they find satisfactory insights. 
 
 ## Contributors
 - [Hussain Khan](https://github.com/fear-the-reaper)
