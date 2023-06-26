@@ -17,7 +17,13 @@ ThreatHawk is an investigative threat intelligence platform that empowers cybert
 - Aggregation of different kinds of Indicators of Compromise (IOCs) from open-source threat intelligence feeds such as AbuseIPDB and Darklist, with support for paid feeds as well. An IOC is any **IP address**, **domain**, **email**, or **file hash** that has been deemed malicious. 
 - Enrichment of the collected IOCs using open-source threat intelligence tools such as EmailRep (for email reputation scores) and MaxMind GeoIP (for IP address geolocation data). This enrichment module is incredibly scalable and new tools can easily be integrated in the future.
 - Iterative, drill-down investigations on a specified IOC. This allows us to dig deeper and actually understand the threat landscape (by drawing links between the IOC, the attacker, and the techniques that were used by the attacker).
-- ThreatHawk is incredibly fault-tolerant and scalable since **each** feature is a separate microservice. This means that future contributions to this project can also be made very easily. 
+- All data is converted to the industry-recognized STIX standard. This means that any external systems can access ThreatHawk's data too.
+- ThreatHawk is incredibly fault-tolerant and scalable since **each** feature is a separate microservice. This means that future contributions to this project can also be made very easily.
+
+## Significance
+- Cyber threats have become increasingly globalized, which is why it is essential to move towards open-source threat intelligence.
+- Traditionally, analyzing a single IOC with multiple tools is an incredibly painful process, since analysts must **manually** configure each tool separately. This is very difficult because different tools work differently (some use REST APIs, whereas others use client libraries or SDKs). ThreatHawk automates the usage of these different tools through one click.
+- Investigating an IOC iteratively (beyond the first level) is a relatively novel approach since most competing solutions only provide data for the first layer. With ThreatHawk, analysts can drill-down to deeper layers until they find satisfactory insights. 
 
 ## Contributors
 - [Hussain Khan](https://github.com/fear-the-reaper)
