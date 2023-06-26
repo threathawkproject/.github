@@ -14,9 +14,10 @@ ThreatHawk is an investigative threat intelligence platform that empowers cybert
 - Meilisearch
 
 ## Main Features
-- Aggregation of different kinds of Indicators of Compromise (IOCs) from open-source threat intelligence feeds such as AbuseIPDB and Darklist, with support for paid feeds as well.
+- Aggregation of different kinds of Indicators of Compromise (IOCs) from open-source threat intelligence feeds such as AbuseIPDB and Darklist, with support for paid feeds as well. An IOC is any **IP address**, **domain**, **email**, or **file hash** that has been deemed malicious. 
 - Enrichment of the collected IOCs using open-source threat intelligence tools such as EmailRep (for email reputation scores) and MaxMind GeoIP (for IP address geolocation data). This enrichment module is incredibly scalable and new tools can easily be integrated in the future.
-- Iterative, drill-down investigations on a specified IOC. This allows us to dig deeper and actually understand the threat landscape (by drawing links between the IOC, the attacker, and the techniques that were used by the attacker). 
+- Iterative, drill-down investigations on a specified IOC. This allows us to dig deeper and actually understand the threat landscape (by drawing links between the IOC, the attacker, and the techniques that were used by the attacker).
+- ThreatHawk is incredibly fault-tolerant and scalable since **each** feature is a separate microservice. This means that future contributions to this project can also be made very easily. 
 
 ## Contributors
 - [Hussain Khan](https://github.com/fear-the-reaper)
