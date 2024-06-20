@@ -23,6 +23,22 @@ ThreatHawk is an investigative threat intelligence platform that empowers cybert
 - Traditionally, analyzing a single IOC with multiple tools is an incredibly painful process, since analysts must **manually** configure each tool separately. This is very difficult because different tools work differently (some use REST APIs, whereas others use client libraries or SDKs). ThreatHawk automates the usage of these different tools through one click.
 - Investigating an IOC iteratively (beyond the first level) is a relatively novel approach since most competing solutions only provide data up till the first layer. With ThreatHawk, analysts can drill-down to deeper layers until they find satisfactory insights. 
 
+## Deployment
+- Ensure the following packages are installed and setup correctly
+  - `python3-pip`
+  - `docker.io`
+  - `docker-compose`
+
+> Run the following command to download a script to clone all required repositories 
+`curl -L https://github.com/4W4I5/scripts/blob/main/threathawk/deployment.sh`
+
+> Mark it as executable
+`chmod +x deployment.sh`
+
+> Run the script (use --build to force rebuild of containers if needed)
+`./deployment.sh`
+
+
 ## Contributors
 - [Hussain Khan](https://github.com/fear-the-reaper)
 - [Zohaib Adnan](https://github.com/zohaibadnan137)
