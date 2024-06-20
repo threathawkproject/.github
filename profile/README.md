@@ -35,6 +35,7 @@ ThreatHawk is an investigative threat intelligence platform that empowers cybert
    - `chmod +x deployment.sh`
 - Run the script (use `--build` to force rebuild of containers if needed)
    - `./deployment.sh`
+- Follow instructions listed in the [ioc_aggregator](https://github.com/threathawkproject/ioc_aggregator) repo 
 
 
 ## Contributors
