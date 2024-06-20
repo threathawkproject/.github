@@ -30,7 +30,7 @@ ThreatHawk is an investigative threat intelligence platform that empowers cybert
   - `docker-compose`
 
 - Run the following command to download a script to clone all required repositories
-   - `curl -L https://github.com/4W4I5/scripts/blob/main/threathawk/deployment.sh`
+   - `curl -L curl https://raw.githubusercontent.com/4W4I5/scripts/main/threathawk/deployment.sh -o deployment.sh`
 - Mark it as executable
    - `chmod +x deployment.sh`
 - Run the script (use `--build` to force rebuild of containers if needed)
