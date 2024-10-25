@@ -37,36 +37,32 @@ ThreatHawk is an investigative threat intelligence platform that empowers cybert
    - `./deployment.sh`
 - Follow instructions listed below after all containers have been successfully deployed
 
-## Step 1: Install the required dependencies
+#### Step 1: Install the required dependencies
 ```bash
 cd aggregator
 pip install -r requirements.txt 
 
 ```
 
-
-## Step 2: Migrations
+#### Step 2: Migrations
 ```bash
-python manage.py makemigrations
-python manage.py migrate
+python3 manage.py makemigrations
+python3 manage.py migrate
 ```
 
-## Step 3: Run the server
+#### Step 3: Run the server
 ```bash
-python manage.py runserver 8004
+python3 manage.py runserver 8004
 ```
 
-### Exposed Endpoints
-- `/api/ioc_feeds`
-
-## Step 4: Run the consumer
+#### Step 4: Run the consumer, in a new terminal
 ```bash
-python manage.py ioc_feeds_consumer
+python3 manage.py ioc_feeds_consumer
 ```
 
-## Step 5: Run the producer
+#### Step 5: Run the producer, in a new terminal
 ```bash
-python manage.py ioc_feeds_job
+python3 manage.py ioc_feeds_job
 ```
 
 
