@@ -28,6 +28,7 @@ ThreatHawk is an investigative threat intelligence platform that empowers cybert
   - `python3-pip`
   - `docker.io`
   - `docker-compose`
+  - `curl`
 
 - Run the following command to download a script to clone all required repositories
    - `curl -L https://raw.githubusercontent.com/4W4I5/scripts/main/threathawk/deployment.sh -o deployment.sh`
@@ -39,7 +40,7 @@ ThreatHawk is an investigative threat intelligence platform that empowers cybert
 
 #### Step 1: Install the required dependencies
 ```bash
-cd aggregator
+cd threathawk/ioc-aggregator
 pip install -r requirements.txt 
 
 ```
