@@ -35,7 +35,39 @@ ThreatHawk is an investigative threat intelligence platform that empowers cybert
    - `chmod +x deployment.sh`
 - Run the script (use `--build` to force rebuild of containers if needed)
    - `./deployment.sh`
-- Follow instructions listed in the [ioc_aggregator](https://github.com/threathawkproject/ioc_aggregator) repo 
+- Follow instructions listed below after all containers have been successfully deployed
+
+## Step 1: Install the required dependencies
+```bash
+cd aggregator
+pip install -r requirements.txt 
+
+```
+
+
+## Step 2: Migrations
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+## Step 3: Run the server
+```bash
+python manage.py runserver 8004
+```
+
+### Exposed Endpoints
+- `/api/ioc_feeds`
+
+## Step 4: Run the consumer
+```bash
+python manage.py ioc_feeds_consumer
+```
+
+## Step 5: Run the producer
+```bash
+python manage.py ioc_feeds_job
+```
 
 
 ## Contributors
